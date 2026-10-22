@@ -1,0 +1,88 @@
+:root {
+    --color-principal: #183257;
+    --color-secundario: #e8f1fb;
+    --fuente-base: Times new roman, sans-serif;
+}
+
+body {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    font-family: var(--fuente-base);
+    margin: 0;
+    padding: 0 1rem;
+}
+
+
+
+/* Selector de clase */
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.menu a {
+    color: var(--color-principal);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+} 
+
+.menu b {
+    color: var(--color-principal);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 1s, color 1s;
+}
+
+.menu a:hover {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+.menu b:hover {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+}
+
+
+/* Selector de clase */
+.foto {
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+/* Selector de ID */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 400px;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border: 2px solid var(--color-principal);
+    border-radius: 8px;
+}
+
+#formulario input,
+#formulario select {
+    padding: 0.5rem;
+    border: 1px solid var(--color-principal);
+    border-radius: 4px;
+}
+
+#formulario button {
+    padding: 0.6rem;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 1rem 0;
+}
